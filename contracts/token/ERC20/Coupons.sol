@@ -2,15 +2,15 @@
 pragma solidity ^0.6.10;
 pragma experimental ABIEncoderV2;
 
-import "../../access/AccessController.sol";
+import "../../access/ACL.sol";
 import "./JJToken.sol";
 
 import "./ERC20.sol";
 import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 
-contract Coupons is ERC20, AccessController {
-    
+contract Coupons is ERC20, ACL {
+
     mapping (address => mapping (address => uint)) public tokens; // mapping of token addresses to mapping of account balances (token=0 means Ether)
 
     event OrderForUser(address tokenGet, uint amountGet, address tokenGive, uint amountGive, uint nonce, address maker, bytes32 indexed orderHash);
@@ -40,14 +40,14 @@ contract Coupons is ERC20, AccessController {
         // setAdmin(msg.sender);
         coupons.push(Coupon(name, symbol ,id ,storeId ,expireTime,issueTime));
         emit NewCoupon(name, symbol ,id ,storeId ,expireTime,issueTime);
-        
+
     }
     Coupon[] public coupons;
 
     function getInfo() public view returns (Coupon memory cp){
         return coupons[0];
     }
-    
+
     function getBalance(address userAddress) public view returns(uint256) {
         return balanceOf(userAddress);
     }
@@ -59,9 +59,9 @@ contract Coupons is ERC20, AccessController {
         // 商家分成商家分成商家90%；
         jToken.transfer(msg.sender, amount.mul(9).div(10));
         // 平台分成10%；
-        jToken.transfer(feeAddress, amount.mul(1).div(10));
+        jToken.transfer(getFeeAddress(), amount.mul(1).div(10));
     }
-    
+
     function batchMint(address tokenAddress, address[] memory staff,uint256 amount) onlyAdmin public {
         for (uint i = 0; i < staff.length; i++) {
             JJToken jToken = JJToken(tokenAddress);
@@ -69,12 +69,12 @@ contract Coupons is ERC20, AccessController {
             _mint(staff[i], amount);
         }
     }
-    
+
     function issue(address tokenAddress, address enterpriseAddress,uint256 amount) onlyAdmin public{
         JJToken jToken = JJToken(tokenAddress);
         jToken.mint(enterpriseAddress,amount);
     }
-    
+
     function mint(address tokenAddress, address staff, uint256 amount) onlyEnterprise public  {
         JJToken jToken = JJToken(tokenAddress);
         jToken.transferFrom(msg.sender, address(this), amount);

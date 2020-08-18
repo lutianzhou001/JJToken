@@ -2,14 +2,14 @@
 pragma solidity ^0.6.10;
 pragma experimental ABIEncoderV2;
 
-import "../../access/AccessController.sol";
+import "../../access/ACL.sol";
 
 
 import "./ERC20.sol";
 import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 
-contract JJToken is ERC20, AccessController {
+contract JJToken is ERC20, ACL {
 
     constructor (string memory name, string memory symbol)
         ERC20(name, symbol)
@@ -33,7 +33,7 @@ contract JJToken is ERC20, AccessController {
         _approve(msg.sender, tokenAddress, amount);
         return true;
     }
-    
+
     function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
         _transfer(msg.sender, recipient, amount);
         return true;
