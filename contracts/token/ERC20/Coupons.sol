@@ -65,7 +65,7 @@ contract Coupons is ERC20, AccessController {
     function batchMint(address tokenAddress, address[] memory staff,uint256 amount) onlyAdmin public {
         for (uint i = 0; i < staff.length; i++) {
             JJToken jToken = JJToken(tokenAddress);
-            jToken.mint(address(this),amount);
+            jToken.transferFrom(msg.sender, address(this), amount);
             _mint(staff[i], amount);
         }
     }
