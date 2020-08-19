@@ -52,6 +52,24 @@ contract Roles {
         emit EnterpriseEvent (_newEnterpriseName, _newEnterpriseId, _newEnterpriseAddress);
     }
     
+    
+    function getStoreById(string memory _storeId) public view returns (address sAddress) {
+         for(uint256 i =0; i< stores.length; i++){
+           if(compareStrings(stores[i].storeId , _storeId)){
+              return stores[i].storeAddress;
+           }
+       }
+    }
+    
+    function getEnterpriseById(string memory  _enterpriseId) public view returns (address eAddress) {
+        for(uint256 i =0; i< enterprises.length; i++){
+           if(compareStrings(enterprises[i].enterpriseId , _enterpriseId)){
+              return enterprises[i].enterpriseAddress;
+           }
+       }
+    }
+    
+    
     function storesCount() public view returns (uint256 storesCount){
         return stores.length;
     }
