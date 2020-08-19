@@ -1,5 +1,6 @@
 # JJToken
 
+The latest files are on https://jjtoken-wiki.readthedocs.io/zh_CN/latest/index.html ,enjoy~
 
 🚀🚀🚀 Welcome to use JJToken and we really appreciate if u give us a star at this repository
 
