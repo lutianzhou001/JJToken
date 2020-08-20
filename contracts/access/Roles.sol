@@ -70,19 +70,19 @@ contract Roles {
     }
     
     
-    function storesCount() public view returns (uint256 storesCount){
+    function storesCount() public view returns (uint256 sc){
         return stores.length;
     }
     
-    function veryStore(uint index) public view returns (store memory veryStore){
+    function veryStore(uint index) public view returns (store memory vs){
         return stores[index];
     }  
 
-    function enterpriseCount() public view returns (uint256 enterpriseCount){
+    function enterpriseCount() public view returns (uint256 ec){
         return enterprises.length;
     }
     
-    function veryEnterprise(uint index) public view returns (enterprise memory veryEnterprise){
+    function veryEnterprise(uint index) public view returns (enterprise memory ve){
         return enterprises[index];
     }  
     

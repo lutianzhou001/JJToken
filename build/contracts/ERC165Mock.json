@@ -34,27 +34,27 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"registerInterface\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use less than 30 000 gas.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/lu/Desktop/contracts/JJToken/contracts/mocks/ERC165Mock.sol\":\"ERC165Mock\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/lu/Desktop/contracts/JJToken/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0xb046d18f9d09683ca1c0ed6d80c61da8a8a7d9b30bad70a17b898538683eff74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4728713afa6ae36cc9e92c7107c796a313add3ec20f813be2cde76c814486b2a\",\"dweb:/ipfs/QmUJBTXvYaGDF5PVnd5pUvYerc9DRXvqANDzgCzAp3FkkA\"]},\"/Users/lu/Desktop/contracts/JJToken/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xfa152b6e88a1dc50780e8f1580426dc23ad2e1e2c2f086a088adf206a202f453\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5127b264994adab88fae419b1c493efc5acd07134c19ee5c0397e50018291ebf\",\"dweb:/ipfs/QmWwJZVhvdmvUCdimbb6R2Jiu59zjPqm6XTMchM6LaEHAp\"]},\"/Users/lu/Desktop/contracts/JJToken/contracts/mocks/ERC165Mock.sol\":{\"keccak256\":\"0x8fca78f777e170150543ddadb08f1bc4878ca0119237577c99e867bfc12e7896\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c72e8683d600a9ec38307067eadfbb2e5d71e379ccad0ee935e7df588f82c86\",\"dweb:/ipfs/QmSF9tidXvADbhW57XuzmkSq6EAz5u5R456TrsAmtUqBdn\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506100276301ffc9a760e01b61002c60201b60201c565b610134565b63ffffffff60e01b817bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614156100c8576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4552433136353a20696e76616c696420696e746572666163652069640000000081525060200191505060405180910390fd5b6001600080837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b61029e806101436000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806301ffc9a71461003b578063214cdb80146100a0575b600080fd5b6100866004803603602081101561005157600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191690602001909291905050506100ed565b604051808215151515815260200191505060405180910390f35b6100eb600480360360208110156100b657600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19169060200190929190505050610154565b005b6000806000837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060009054906101000a900460ff169050919050565b61015d81610160565b50565b63ffffffff60e01b817bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614156101fc576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4552433136353a20696e76616c696420696e746572666163652069640000000081525060200191505060405180910390fd5b6001600080837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea2646970667358221220a0372ebaf5224a199b241e367e2a88e22d987e300cf7e5ce6ff6b85a131ee35564736f6c634300060a0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806301ffc9a71461003b578063214cdb80146100a0575b600080fd5b6100866004803603602081101561005157600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191690602001909291905050506100ed565b604051808215151515815260200191505060405180910390f35b6100eb600480360360208110156100b657600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19169060200190929190505050610154565b005b6000806000837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060009054906101000a900460ff169050919050565b61015d81610160565b50565b63ffffffff60e01b817bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614156101fc576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4552433136353a20696e76616c696420696e746572666163652069640000000081525060200191505060405180910390fd5b6001600080837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea2646970667358221220a0372ebaf5224a199b241e367e2a88e22d987e300cf7e5ce6ff6b85a131ee35564736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"registerInterface\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use less than 30 000 gas.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/lu/Desktop/ningbojj/JJToken/contracts/mocks/ERC165Mock.sol\":\"ERC165Mock\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/lu/Desktop/ningbojj/JJToken/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0xb046d18f9d09683ca1c0ed6d80c61da8a8a7d9b30bad70a17b898538683eff74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4728713afa6ae36cc9e92c7107c796a313add3ec20f813be2cde76c814486b2a\",\"dweb:/ipfs/QmUJBTXvYaGDF5PVnd5pUvYerc9DRXvqANDzgCzAp3FkkA\"]},\"/Users/lu/Desktop/ningbojj/JJToken/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xfa152b6e88a1dc50780e8f1580426dc23ad2e1e2c2f086a088adf206a202f453\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5127b264994adab88fae419b1c493efc5acd07134c19ee5c0397e50018291ebf\",\"dweb:/ipfs/QmWwJZVhvdmvUCdimbb6R2Jiu59zjPqm6XTMchM6LaEHAp\"]},\"/Users/lu/Desktop/ningbojj/JJToken/contracts/mocks/ERC165Mock.sol\":{\"keccak256\":\"0x8fca78f777e170150543ddadb08f1bc4878ca0119237577c99e867bfc12e7896\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c72e8683d600a9ec38307067eadfbb2e5d71e379ccad0ee935e7df588f82c86\",\"dweb:/ipfs/QmSF9tidXvADbhW57XuzmkSq6EAz5u5R456TrsAmtUqBdn\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506100276301ffc9a760e01b61002c60201b60201c565b610134565b63ffffffff60e01b817bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614156100c8576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4552433136353a20696e76616c696420696e746572666163652069640000000081525060200191505060405180910390fd5b6001600080837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b61029e806101436000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806301ffc9a71461003b578063214cdb80146100a0575b600080fd5b6100866004803603602081101561005157600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191690602001909291905050506100ed565b604051808215151515815260200191505060405180910390f35b6100eb600480360360208110156100b657600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19169060200190929190505050610154565b005b6000806000837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060009054906101000a900460ff169050919050565b61015d81610160565b50565b63ffffffff60e01b817bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614156101fc576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4552433136353a20696e76616c696420696e746572666163652069640000000081525060200191505060405180910390fd5b6001600080837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea264697066735822122025e0c06aa5568fb71878ecfbc2312f9a49fec1816bd954eefd3adce5d266e9ba64736f6c634300060a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806301ffc9a71461003b578063214cdb80146100a0575b600080fd5b6100866004803603602081101561005157600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191690602001909291905050506100ed565b604051808215151515815260200191505060405180910390f35b6100eb600480360360208110156100b657600080fd5b8101908080357bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19169060200190929190505050610154565b005b6000806000837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060009054906101000a900460ff169050919050565b61015d81610160565b50565b63ffffffff60e01b817bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614156101fc576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4552433136353a20696e76616c696420696e746572666163652069640000000081525060200191505060405180910390fd5b6001600080837bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea264697066735822122025e0c06aa5568fb71878ecfbc2312f9a49fec1816bd954eefd3adce5d266e9ba64736f6c634300060a0033",
   "immutableReferences": {},
-  "sourceMap": "97:140:38:-:0;;;;;;;;;;;;;751:40:13;418:10;770:20;;751:18;;;:40;;:::i;:::-;97:140:38;;1482:198:13;1580:10;1565:25;;:11;:25;;;;;1557:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1669:4;1633:20;:33;1654:11;1633:33;;;;;;;;;;;;;;;;;;:40;;;;;;;;;;;;;;;;;;1482:198;:::o;97:140:38:-;;;;;;;",
-  "deployedSourceMap": "97:140:38:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;948::13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;133:102:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;948:140:13;1025:4;1048:20;:33;1069:11;1048:33;;;;;;;;;;;;;;;;;;;;;;;;;;;1041:40;;948:140;;;:::o;133:102:38:-;197:31;216:11;197:18;:31::i;:::-;133:102;:::o;1482:198:13:-;1580:10;1565:25;;:11;:25;;;;;1557:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1669:4;1633:20;:33;1654:11;1633:33;;;;;;;;;;;;;;;;;;:40;;;;;;;;;;;;;;;;;;1482:198;:::o",
+  "sourceMap": "97:140:40:-:0;;;;;;;;;;;;;751:40:15;418:10;770:20;;751:18;;;:40;;:::i;:::-;97:140:40;;1482:198:15;1580:10;1565:25;;:11;:25;;;;;1557:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1669:4;1633:20;:33;1654:11;1633:33;;;;;;;;;;;;;;;;;;:40;;;;;;;;;;;;;;;;;;1482:198;:::o;97:140:40:-;;;;;;;",
+  "deployedSourceMap": "97:140:40:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;948::15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;133:102:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;948:140:15;1025:4;1048:20;:33;1069:11;1048:33;;;;;;;;;;;;;;;;;;;;;;;;;;;1041:40;;948:140;;;:::o;133:102:40:-;197:31;216:11;197:18;:31::i;:::-;133:102;:::o;1482:198:15:-;1580:10;1565:25;;:11;:25;;;;;1557:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1669:4;1633:20;:33;1654:11;1633:33;;;;;;;;;;;;;;;;;;:40;;;;;;;;;;;;;;;;;;1482:198;:::o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.6.0;\n\nimport \"../introspection/ERC165.sol\";\n\ncontract ERC165Mock is ERC165 {\n    function registerInterface(bytes4 interfaceId) public {\n        _registerInterface(interfaceId);\n    }\n}\n",
-  "sourcePath": "/Users/lu/Desktop/contracts/JJToken/contracts/mocks/ERC165Mock.sol",
+  "sourcePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/mocks/ERC165Mock.sol",
   "ast": {
-    "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/mocks/ERC165Mock.sol",
+    "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/mocks/ERC165Mock.sol",
     "exportedSymbols": {
       "ERC165Mock": [
-        4582
+        5016
       ]
     },
-    "id": 4583,
+    "id": 5017,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4568,
+        "id": 5002,
         "literals": [
           "solidity",
           "^",
@@ -62,16 +62,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:38"
+        "src": "33:23:40"
       },
       {
-        "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/introspection/ERC165.sol",
+        "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/introspection/ERC165.sol",
         "file": "../introspection/ERC165.sol",
-        "id": 4569,
+        "id": 5003,
         "nodeType": "ImportDirective",
-        "scope": 4583,
-        "sourceUnit": 2793,
-        "src": "58:37:38",
+        "scope": 5017,
+        "sourceUnit": 3227,
+        "src": "58:37:40",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -82,42 +82,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4570,
+              "id": 5004,
               "name": "ERC165",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2792,
-              "src": "120:6:38",
+              "referencedDeclaration": 3226,
+              "src": "120:6:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC165_$2792",
+                "typeIdentifier": "t_contract$_ERC165_$3226",
                 "typeString": "contract ERC165"
               }
             },
-            "id": 4571,
+            "id": 5005,
             "nodeType": "InheritanceSpecifier",
-            "src": "120:6:38"
+            "src": "120:6:40"
           }
         ],
         "contractDependencies": [
-          2792,
-          3038
+          3226,
+          3472
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4582,
+        "id": 5016,
         "linearizedBaseContracts": [
-          4582,
-          2792,
-          3038
+          5016,
+          3226,
+          3472
         ],
         "name": "ERC165Mock",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4580,
+              "id": 5014,
               "nodeType": "Block",
-              "src": "187:48:38",
+              "src": "187:48:40",
               "statements": [
                 {
                   "expression": {
@@ -125,12 +125,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4577,
+                        "id": 5011,
                         "name": "interfaceId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4573,
-                        "src": "216:11:38",
+                        "referencedDeclaration": 5007,
+                        "src": "216:11:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
                           "typeString": "bytes4"
@@ -144,18 +144,18 @@
                           "typeString": "bytes4"
                         }
                       ],
-                      "id": 4576,
+                      "id": 5010,
                       "name": "_registerInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2791,
-                      "src": "197:18:38",
+                      "referencedDeclaration": 3225,
+                      "src": "197:18:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$returns$__$",
                         "typeString": "function (bytes4)"
                       }
                     },
-                    "id": 4578,
+                    "id": 5012,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -163,22 +163,22 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "197:31:38",
+                    "src": "197:31:40",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4579,
+                  "id": 5013,
                   "nodeType": "ExpressionStatement",
-                  "src": "197:31:38"
+                  "src": "197:31:40"
                 }
               ]
             },
             "documentation": null,
             "functionSelector": "214cdb80",
-            "id": 4581,
+            "id": 5015,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -186,18 +186,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 4574,
+              "id": 5008,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4573,
+                  "id": 5007,
                   "mutability": "mutable",
                   "name": "interfaceId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 4581,
-                  "src": "160:18:38",
+                  "scope": 5015,
+                  "src": "160:18:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -205,10 +205,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 4572,
+                    "id": 5006,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "160:6:38",
+                    "src": "160:6:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -218,40 +218,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "159:20:38"
+              "src": "159:20:40"
             },
             "returnParameters": {
-              "id": 4575,
+              "id": 5009,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "187:0:38"
+              "src": "187:0:40"
             },
-            "scope": 4582,
-            "src": "133:102:38",
+            "scope": 5016,
+            "src": "133:102:40",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 4583,
-        "src": "97:140:38"
+        "scope": 5017,
+        "src": "97:140:40"
       }
     ],
-    "src": "33:205:38"
+    "src": "33:205:40"
   },
   "legacyAST": {
-    "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/mocks/ERC165Mock.sol",
+    "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/mocks/ERC165Mock.sol",
     "exportedSymbols": {
       "ERC165Mock": [
-        4582
+        5016
       ]
     },
-    "id": 4583,
+    "id": 5017,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4568,
+        "id": 5002,
         "literals": [
           "solidity",
           "^",
@@ -259,16 +259,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:38"
+        "src": "33:23:40"
       },
       {
-        "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/introspection/ERC165.sol",
+        "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/introspection/ERC165.sol",
         "file": "../introspection/ERC165.sol",
-        "id": 4569,
+        "id": 5003,
         "nodeType": "ImportDirective",
-        "scope": 4583,
-        "sourceUnit": 2793,
-        "src": "58:37:38",
+        "scope": 5017,
+        "sourceUnit": 3227,
+        "src": "58:37:40",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -279,42 +279,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4570,
+              "id": 5004,
               "name": "ERC165",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2792,
-              "src": "120:6:38",
+              "referencedDeclaration": 3226,
+              "src": "120:6:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC165_$2792",
+                "typeIdentifier": "t_contract$_ERC165_$3226",
                 "typeString": "contract ERC165"
               }
             },
-            "id": 4571,
+            "id": 5005,
             "nodeType": "InheritanceSpecifier",
-            "src": "120:6:38"
+            "src": "120:6:40"
           }
         ],
         "contractDependencies": [
-          2792,
-          3038
+          3226,
+          3472
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4582,
+        "id": 5016,
         "linearizedBaseContracts": [
-          4582,
-          2792,
-          3038
+          5016,
+          3226,
+          3472
         ],
         "name": "ERC165Mock",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4580,
+              "id": 5014,
               "nodeType": "Block",
-              "src": "187:48:38",
+              "src": "187:48:40",
               "statements": [
                 {
                   "expression": {
@@ -322,12 +322,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4577,
+                        "id": 5011,
                         "name": "interfaceId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4573,
-                        "src": "216:11:38",
+                        "referencedDeclaration": 5007,
+                        "src": "216:11:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
                           "typeString": "bytes4"
@@ -341,18 +341,18 @@
                           "typeString": "bytes4"
                         }
                       ],
-                      "id": 4576,
+                      "id": 5010,
                       "name": "_registerInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2791,
-                      "src": "197:18:38",
+                      "referencedDeclaration": 3225,
+                      "src": "197:18:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$returns$__$",
                         "typeString": "function (bytes4)"
                       }
                     },
-                    "id": 4578,
+                    "id": 5012,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -360,22 +360,22 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "197:31:38",
+                    "src": "197:31:40",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4579,
+                  "id": 5013,
                   "nodeType": "ExpressionStatement",
-                  "src": "197:31:38"
+                  "src": "197:31:40"
                 }
               ]
             },
             "documentation": null,
             "functionSelector": "214cdb80",
-            "id": 4581,
+            "id": 5015,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -383,18 +383,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 4574,
+              "id": 5008,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4573,
+                  "id": 5007,
                   "mutability": "mutable",
                   "name": "interfaceId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 4581,
-                  "src": "160:18:38",
+                  "scope": 5015,
+                  "src": "160:18:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -402,10 +402,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 4572,
+                    "id": 5006,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "160:6:38",
+                    "src": "160:6:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -415,26 +415,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "159:20:38"
+              "src": "159:20:40"
             },
             "returnParameters": {
-              "id": 4575,
+              "id": 5009,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "187:0:38"
+              "src": "187:0:40"
             },
-            "scope": 4582,
-            "src": "133:102:38",
+            "scope": 5016,
+            "src": "133:102:40",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 4583,
-        "src": "97:140:38"
+        "scope": 5017,
+        "src": "97:140:40"
       }
     ],
-    "src": "33:205:38"
+    "src": "33:205:40"
   },
   "compiler": {
     "name": "solc",
@@ -442,7 +442,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-08-18T13:18:05.996Z",
+  "updatedAt": "2020-08-20T03:21:17.294Z",
   "devdoc": {
     "methods": {
       "supportsInterface(bytes4)": {

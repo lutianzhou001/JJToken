@@ -36,27 +36,27 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Implementation of the {IERC721Receiver} interface. Accepts all token transfers.  Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.\",\"methods\":{\"onERC721Received(address,address,uint256,bytes)\":{\"details\":\"See {IERC721Receiver-onERC721Received}. Always returns `IERC721Receiver.onERC721Received.selector`.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/ERC721Holder.sol\":\"ERC721Holder\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/ERC721Holder.sol\":{\"keccak256\":\"0x34c4a34a6694edaa1c5c92202e5e585f6f49c6103714b7335bce4e54baf46ab2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://97d1c5dff43fac915b2af4beb58c49018250b82b0dd383931de6b675cfc1978d\",\"dweb:/ipfs/QmY98qaJPRpkGQJaS5GMszyo4a9denG76fj1Ea9RurV4oc\"]},\"/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x321ee37ef4925020aa818a03ec7fe48e057561f65ab009a84f6c20c86026ade7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://01f9d74a17a56024984251b97e428e24c9d3abffbae5bd290f0ec263c82e9694\",\"dweb:/ipfs/QmRryCuuXu2ukrDmatB8TqdEhPLiK6NBRt41RiPUaX1qKy\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506101d1806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063150b7a0214610030575b600080fd5b6101336004803603608081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001906401000000008111156100ad57600080fd5b8201836020820111156100bf57600080fd5b803590602001918460018302840111640100000000831117156100e157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610187565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b600063150b7a0260e01b905094935050505056fea2646970667358221220252b79b6ec2e0e9129f9a08ca9f98f6781f29f22826ea1d63276e945e7c246b764736f6c634300060a0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063150b7a0214610030575b600080fd5b6101336004803603608081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001906401000000008111156100ad57600080fd5b8201836020820111156100bf57600080fd5b803590602001918460018302840111640100000000831117156100e157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610187565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b600063150b7a0260e01b905094935050505056fea2646970667358221220252b79b6ec2e0e9129f9a08ca9f98f6781f29f22826ea1d63276e945e7c246b764736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Implementation of the {IERC721Receiver} interface. Accepts all token transfers.  Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.\",\"methods\":{\"onERC721Received(address,address,uint256,bytes)\":{\"details\":\"See {IERC721Receiver-onERC721Received}. Always returns `IERC721Receiver.onERC721Received.selector`.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/ERC721Holder.sol\":\"ERC721Holder\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/ERC721Holder.sol\":{\"keccak256\":\"0x34c4a34a6694edaa1c5c92202e5e585f6f49c6103714b7335bce4e54baf46ab2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://97d1c5dff43fac915b2af4beb58c49018250b82b0dd383931de6b675cfc1978d\",\"dweb:/ipfs/QmY98qaJPRpkGQJaS5GMszyo4a9denG76fj1Ea9RurV4oc\"]},\"/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x321ee37ef4925020aa818a03ec7fe48e057561f65ab009a84f6c20c86026ade7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://01f9d74a17a56024984251b97e428e24c9d3abffbae5bd290f0ec263c82e9694\",\"dweb:/ipfs/QmRryCuuXu2ukrDmatB8TqdEhPLiK6NBRt41RiPUaX1qKy\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506101d1806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063150b7a0214610030575b600080fd5b6101336004803603608081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001906401000000008111156100ad57600080fd5b8201836020820111156100bf57600080fd5b803590602001918460018302840111640100000000831117156100e157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610187565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b600063150b7a0260e01b905094935050505056fea264697066735822122043553de145ee666301b95de17e4e10aaef69a7bd8b0d9dc95a107ae7f6741a3d64736f6c634300060a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063150b7a0214610030575b600080fd5b6101336004803603608081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001906401000000008111156100ad57600080fd5b8201836020820111156100bf57600080fd5b803590602001918460018302840111640100000000831117156100e157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610187565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b600063150b7a0260e01b905094935050505056fea264697066735822122043553de145ee666301b95de17e4e10aaef69a7bd8b0d9dc95a107ae7f6741a3d64736f6c634300060a0033",
   "immutableReferences": {},
-  "sourceMap": "340:354:99:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "340:354:99:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;530:162;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;630:6;655:30;;;648:37;;530:162;;;;;;:::o",
+  "sourceMap": "340:354:101:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "340:354:101:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;530:162;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;630:6;655:30;;;648:37;;530:162;;;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.6.0;\n\nimport \"./IERC721Receiver.sol\";\n\n  /**\n   * @dev Implementation of the {IERC721Receiver} interface.\n   *\n   * Accepts all token transfers. \n   * Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.\n   */\ncontract ERC721Holder is IERC721Receiver {\n\n    /**\n     * @dev See {IERC721Receiver-onERC721Received}.\n     *\n     * Always returns `IERC721Receiver.onERC721Received.selector`.\n     */\n    function onERC721Received(address, address, uint256, bytes memory) public virtual override returns (bytes4) {\n        return this.onERC721Received.selector;\n    }\n}\n",
-  "sourcePath": "/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/ERC721Holder.sol",
+  "sourcePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/ERC721Holder.sol",
   "ast": {
-    "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/ERC721Holder.sol",
+    "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/ERC721Holder.sol",
     "exportedSymbols": {
       "ERC721Holder": [
-        12570
+        13004
       ]
     },
-    "id": 12571,
+    "id": 13005,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 12545,
+        "id": 12979,
         "literals": [
           "solidity",
           "^",
@@ -64,16 +64,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:99"
+        "src": "33:23:101"
       },
       {
-        "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/IERC721Receiver.sol",
+        "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/IERC721Receiver.sol",
         "file": "./IERC721Receiver.sol",
-        "id": 12546,
+        "id": 12980,
         "nodeType": "ImportDirective",
-        "scope": 12571,
-        "sourceUnit": 12800,
-        "src": "58:31:99",
+        "scope": 13005,
+        "sourceUnit": 13234,
+        "src": "58:31:101",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -84,48 +84,48 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 12548,
+              "id": 12982,
               "name": "IERC721Receiver",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 12799,
-              "src": "365:15:99",
+              "referencedDeclaration": 13233,
+              "src": "365:15:101",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC721Receiver_$12799",
+                "typeIdentifier": "t_contract$_IERC721Receiver_$13233",
                 "typeString": "contract IERC721Receiver"
               }
             },
-            "id": 12549,
+            "id": 12983,
             "nodeType": "InheritanceSpecifier",
-            "src": "365:15:99"
+            "src": "365:15:101"
           }
         ],
         "contractDependencies": [
-          12799
+          13233
         ],
         "contractKind": "contract",
         "documentation": {
-          "id": 12547,
+          "id": 12981,
           "nodeType": "StructuredDocumentation",
-          "src": "93:246:99",
+          "src": "93:246:101",
           "text": " @dev Implementation of the {IERC721Receiver} interface.\n Accepts all token transfers. \n Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}."
         },
         "fullyImplemented": true,
-        "id": 12570,
+        "id": 13004,
         "linearizedBaseContracts": [
-          12570,
-          12799
+          13004,
+          13233
         ],
         "name": "ERC721Holder",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "baseFunctions": [
-              12798
+              13232
             ],
             "body": {
-              "id": 12568,
+              "id": 13002,
               "nodeType": "Block",
-              "src": "638:54:99",
+              "src": "638:54:101",
               "statements": [
                 {
                   "expression": {
@@ -134,32 +134,32 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 12564,
+                        "id": 12998,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": -28,
-                        "src": "655:4:99",
+                        "src": "655:4:101",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ERC721Holder_$12570",
+                          "typeIdentifier": "t_contract$_ERC721Holder_$13004",
                           "typeString": "contract ERC721Holder"
                         }
                       },
-                      "id": 12565,
+                      "id": 12999,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "onERC721Received",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 12569,
-                      "src": "655:21:99",
+                      "referencedDeclaration": 13003,
+                      "src": "655:21:101",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$_t_bytes_memory_ptr_$returns$_t_bytes4_$",
                         "typeString": "function (address,address,uint256,bytes memory) external returns (bytes4)"
                       }
                     },
-                    "id": 12566,
+                    "id": 13000,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -167,51 +167,51 @@
                     "memberName": "selector",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "655:30:99",
+                    "src": "655:30:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     }
                   },
-                  "functionReturnParameters": 12563,
-                  "id": 12567,
+                  "functionReturnParameters": 12997,
+                  "id": 13001,
                   "nodeType": "Return",
-                  "src": "648:37:99"
+                  "src": "648:37:101"
                 }
               ]
             },
             "documentation": {
-              "id": 12550,
+              "id": 12984,
               "nodeType": "StructuredDocumentation",
-              "src": "388:137:99",
+              "src": "388:137:101",
               "text": " @dev See {IERC721Receiver-onERC721Received}.\n Always returns `IERC721Receiver.onERC721Received.selector`."
             },
             "functionSelector": "150b7a02",
-            "id": 12569,
+            "id": 13003,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "onERC721Received",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 12560,
+              "id": 12994,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
-              "src": "612:8:99"
+              "src": "612:8:101"
             },
             "parameters": {
-              "id": 12559,
+              "id": 12993,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12552,
+                  "id": 12986,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "556:7:99",
+                  "scope": 13003,
+                  "src": "556:7:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -219,10 +219,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 12551,
+                    "id": 12985,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "556:7:99",
+                    "src": "556:7:101",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -234,13 +234,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 12554,
+                  "id": 12988,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "565:7:99",
+                  "scope": 13003,
+                  "src": "565:7:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -248,10 +248,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 12553,
+                    "id": 12987,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "565:7:99",
+                    "src": "565:7:101",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -263,13 +263,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 12556,
+                  "id": 12990,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "574:7:99",
+                  "scope": 13003,
+                  "src": "574:7:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -277,10 +277,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 12555,
+                    "id": 12989,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "574:7:99",
+                    "src": "574:7:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -291,13 +291,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 12558,
+                  "id": 12992,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "583:12:99",
+                  "scope": 13003,
+                  "src": "583:12:101",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -305,10 +305,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 12557,
+                    "id": 12991,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "583:5:99",
+                    "src": "583:5:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -318,21 +318,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "555:41:99"
+              "src": "555:41:101"
             },
             "returnParameters": {
-              "id": 12563,
+              "id": 12997,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12562,
+                  "id": 12996,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "630:6:99",
+                  "scope": 13003,
+                  "src": "630:6:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -340,10 +340,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 12561,
+                    "id": 12995,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "630:6:99",
+                    "src": "630:6:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -353,34 +353,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "629:8:99"
+              "src": "629:8:101"
             },
-            "scope": 12570,
-            "src": "530:162:99",
+            "scope": 13004,
+            "src": "530:162:101",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 12571,
-        "src": "340:354:99"
+        "scope": 13005,
+        "src": "340:354:101"
       }
     ],
-    "src": "33:662:99"
+    "src": "33:662:101"
   },
   "legacyAST": {
-    "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/ERC721Holder.sol",
+    "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/ERC721Holder.sol",
     "exportedSymbols": {
       "ERC721Holder": [
-        12570
+        13004
       ]
     },
-    "id": 12571,
+    "id": 13005,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 12545,
+        "id": 12979,
         "literals": [
           "solidity",
           "^",
@@ -388,16 +388,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:99"
+        "src": "33:23:101"
       },
       {
-        "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/token/ERC721/IERC721Receiver.sol",
+        "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/token/ERC721/IERC721Receiver.sol",
         "file": "./IERC721Receiver.sol",
-        "id": 12546,
+        "id": 12980,
         "nodeType": "ImportDirective",
-        "scope": 12571,
-        "sourceUnit": 12800,
-        "src": "58:31:99",
+        "scope": 13005,
+        "sourceUnit": 13234,
+        "src": "58:31:101",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -408,48 +408,48 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 12548,
+              "id": 12982,
               "name": "IERC721Receiver",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 12799,
-              "src": "365:15:99",
+              "referencedDeclaration": 13233,
+              "src": "365:15:101",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC721Receiver_$12799",
+                "typeIdentifier": "t_contract$_IERC721Receiver_$13233",
                 "typeString": "contract IERC721Receiver"
               }
             },
-            "id": 12549,
+            "id": 12983,
             "nodeType": "InheritanceSpecifier",
-            "src": "365:15:99"
+            "src": "365:15:101"
           }
         ],
         "contractDependencies": [
-          12799
+          13233
         ],
         "contractKind": "contract",
         "documentation": {
-          "id": 12547,
+          "id": 12981,
           "nodeType": "StructuredDocumentation",
-          "src": "93:246:99",
+          "src": "93:246:101",
           "text": " @dev Implementation of the {IERC721Receiver} interface.\n Accepts all token transfers. \n Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}."
         },
         "fullyImplemented": true,
-        "id": 12570,
+        "id": 13004,
         "linearizedBaseContracts": [
-          12570,
-          12799
+          13004,
+          13233
         ],
         "name": "ERC721Holder",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "baseFunctions": [
-              12798
+              13232
             ],
             "body": {
-              "id": 12568,
+              "id": 13002,
               "nodeType": "Block",
-              "src": "638:54:99",
+              "src": "638:54:101",
               "statements": [
                 {
                   "expression": {
@@ -458,32 +458,32 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 12564,
+                        "id": 12998,
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": -28,
-                        "src": "655:4:99",
+                        "src": "655:4:101",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ERC721Holder_$12570",
+                          "typeIdentifier": "t_contract$_ERC721Holder_$13004",
                           "typeString": "contract ERC721Holder"
                         }
                       },
-                      "id": 12565,
+                      "id": 12999,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "onERC721Received",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 12569,
-                      "src": "655:21:99",
+                      "referencedDeclaration": 13003,
+                      "src": "655:21:101",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$_t_bytes_memory_ptr_$returns$_t_bytes4_$",
                         "typeString": "function (address,address,uint256,bytes memory) external returns (bytes4)"
                       }
                     },
-                    "id": 12566,
+                    "id": 13000,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -491,51 +491,51 @@
                     "memberName": "selector",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "655:30:99",
+                    "src": "655:30:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     }
                   },
-                  "functionReturnParameters": 12563,
-                  "id": 12567,
+                  "functionReturnParameters": 12997,
+                  "id": 13001,
                   "nodeType": "Return",
-                  "src": "648:37:99"
+                  "src": "648:37:101"
                 }
               ]
             },
             "documentation": {
-              "id": 12550,
+              "id": 12984,
               "nodeType": "StructuredDocumentation",
-              "src": "388:137:99",
+              "src": "388:137:101",
               "text": " @dev See {IERC721Receiver-onERC721Received}.\n Always returns `IERC721Receiver.onERC721Received.selector`."
             },
             "functionSelector": "150b7a02",
-            "id": 12569,
+            "id": 13003,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "onERC721Received",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 12560,
+              "id": 12994,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
-              "src": "612:8:99"
+              "src": "612:8:101"
             },
             "parameters": {
-              "id": 12559,
+              "id": 12993,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12552,
+                  "id": 12986,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "556:7:99",
+                  "scope": 13003,
+                  "src": "556:7:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -543,10 +543,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 12551,
+                    "id": 12985,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "556:7:99",
+                    "src": "556:7:101",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -558,13 +558,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 12554,
+                  "id": 12988,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "565:7:99",
+                  "scope": 13003,
+                  "src": "565:7:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -572,10 +572,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 12553,
+                    "id": 12987,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "565:7:99",
+                    "src": "565:7:101",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -587,13 +587,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 12556,
+                  "id": 12990,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "574:7:99",
+                  "scope": 13003,
+                  "src": "574:7:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -601,10 +601,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 12555,
+                    "id": 12989,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "574:7:99",
+                    "src": "574:7:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -615,13 +615,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 12558,
+                  "id": 12992,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "583:12:99",
+                  "scope": 13003,
+                  "src": "583:12:101",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -629,10 +629,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 12557,
+                    "id": 12991,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "583:5:99",
+                    "src": "583:5:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -642,21 +642,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "555:41:99"
+              "src": "555:41:101"
             },
             "returnParameters": {
-              "id": 12563,
+              "id": 12997,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12562,
+                  "id": 12996,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 12569,
-                  "src": "630:6:99",
+                  "scope": 13003,
+                  "src": "630:6:101",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -664,10 +664,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 12561,
+                    "id": 12995,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "630:6:99",
+                    "src": "630:6:101",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -677,20 +677,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "629:8:99"
+              "src": "629:8:101"
             },
-            "scope": 12570,
-            "src": "530:162:99",
+            "scope": 13004,
+            "src": "530:162:101",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 12571,
-        "src": "340:354:99"
+        "scope": 13005,
+        "src": "340:354:101"
       }
     ],
-    "src": "33:662:99"
+    "src": "33:662:101"
   },
   "compiler": {
     "name": "solc",
@@ -698,7 +698,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-08-18T13:18:06.162Z",
+  "updatedAt": "2020-08-20T03:21:17.718Z",
   "devdoc": {
     "details": "Implementation of the {IERC721Receiver} interface. Accepts all token transfers.  Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.",
     "methods": {

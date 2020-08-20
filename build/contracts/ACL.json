@@ -15,16 +15,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getFeeAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"fAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/lu/Desktop/contracts/JJToken/contracts/access/ACL.sol\":\"ACL\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/lu/Desktop/contracts/JJToken/contracts/access/ACL.sol\":{\"keccak256\":\"0x156b63eebfa7e4e4a96f47964b59aae9a17374786ec668677ec4bc84e73a8d87\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d586fceb9f2408b1b9252f93886fbcd49da43ae61898f48bb787aa89e9ae7393\",\"dweb:/ipfs/QmVLMpWa4iLXV2J4FQPpYwMzc45d3KoRG6esdxuZagsR4L\"]},\"/Users/lu/Desktop/contracts/JJToken/contracts/access/Roles.sol\":{\"keccak256\":\"0x0e6fb09369e8ea79b529d48a61d0e5756bcd7853c5acbf6208557b4491edbbe7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://583b37445655bc5faa6b00c29fafbe1316c94e992b6d2a67965c5a3e358f8b04\",\"dweb:/ipfs/QmSFJx16fx4FaGxiyPU7pkrcqQcrTB2G279cB8bFh1dkTi\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506101d3806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80634e7ceacb14610030575b600080fd5b61003861004e565b6040516100459190610139565b60405180910390f35b6000807322e7dd9b7c2708de833b880ef9804d3e31689fa690508073ffffffffffffffffffffffffffffffffffffffff1663412753586040518163ffffffff1660e01b815260040160206040518083038186803b1580156100ae57600080fd5b505afa1580156100c2573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100e69190610101565b91505090565b6000815190506100fb81610186565b92915050565b60006020828403121561011357600080fd5b6000610121848285016100ec565b91505092915050565b61013381610154565b82525050565b600060208201905061014e600083018461012a565b92915050565b600061015f82610166565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b61018f81610154565b811461019a57600080fd5b5056fea2646970667358221220f83d68bbe687a82df7c072578066916db709905e902b4d1549f255a9a9df0b0c64736f6c634300060a0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80634e7ceacb14610030575b600080fd5b61003861004e565b6040516100459190610139565b60405180910390f35b6000807322e7dd9b7c2708de833b880ef9804d3e31689fa690508073ffffffffffffffffffffffffffffffffffffffff1663412753586040518163ffffffff1660e01b815260040160206040518083038186803b1580156100ae57600080fd5b505afa1580156100c2573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100e69190610101565b91505090565b6000815190506100fb81610186565b92915050565b60006020828403121561011357600080fd5b6000610121848285016100ec565b91505092915050565b61013381610154565b82525050565b600060208201905061014e600083018461012a565b92915050565b600061015f82610166565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b61018f81610154565b811461019a57600080fd5b5056fea2646970667358221220f83d68bbe687a82df7c072578066916db709905e902b4d1549f255a9a9df0b0c64736f6c634300060a0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getFeeAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"fAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/lu/Desktop/ningbojj/JJToken/contracts/access/ACL.sol\":\"ACL\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/lu/Desktop/ningbojj/JJToken/contracts/access/ACL.sol\":{\"keccak256\":\"0x156b63eebfa7e4e4a96f47964b59aae9a17374786ec668677ec4bc84e73a8d87\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d586fceb9f2408b1b9252f93886fbcd49da43ae61898f48bb787aa89e9ae7393\",\"dweb:/ipfs/QmVLMpWa4iLXV2J4FQPpYwMzc45d3KoRG6esdxuZagsR4L\"]},\"/Users/lu/Desktop/ningbojj/JJToken/contracts/access/Roles.sol\":{\"keccak256\":\"0x830b5b2003599ae0b79ac486b225dd85d2bf9bcd53cf94bde85b3298af493b9f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b8093c4234b04a7aea0e5f3e86d232ef24cd0996fd46f90581de99cda07d126d\",\"dweb:/ipfs/Qmc3R5PLgc1UGz3VJUUieBmmQ1sQKwDiVkUgnmtVUPCEHT\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506101d3806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80634e7ceacb14610030575b600080fd5b61003861004e565b6040516100459190610139565b60405180910390f35b6000807322e7dd9b7c2708de833b880ef9804d3e31689fa690508073ffffffffffffffffffffffffffffffffffffffff1663412753586040518163ffffffff1660e01b815260040160206040518083038186803b1580156100ae57600080fd5b505afa1580156100c2573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100e69190610101565b91505090565b6000815190506100fb81610186565b92915050565b60006020828403121561011357600080fd5b6000610121848285016100ec565b91505092915050565b61013381610154565b82525050565b600060208201905061014e600083018461012a565b92915050565b600061015f82610166565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b61018f81610154565b811461019a57600080fd5b5056fea2646970667358221220e6cdba1086f9345e60ae196a0f3e5899fdc1040d210f0fbe7c97c9d88c027f6264736f6c634300060a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80634e7ceacb14610030575b600080fd5b61003861004e565b6040516100459190610139565b60405180910390f35b6000807322e7dd9b7c2708de833b880ef9804d3e31689fa690508073ffffffffffffffffffffffffffffffffffffffff1663412753586040518163ffffffff1660e01b815260040160206040518083038186803b1580156100ae57600080fd5b505afa1580156100c2573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100e69190610101565b91505090565b6000815190506100fb81610186565b92915050565b60006020828403121561011357600080fd5b6000610121848285016100ec565b91505092915050565b61013381610154565b82525050565b600060208201905061014e600083018461012a565b92915050565b600061015f82610166565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b61018f81610154565b811461019a57600080fd5b5056fea2646970667358221220e6cdba1086f9345e60ae196a0f3e5899fdc1040d210f0fbe7c97c9d88c027f6264736f6c634300060a0033",
   "immutableReferences": {},
   "sourceMap": "115:1018:6:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "115:1018:6:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;542:147;;;:::i;:::-;;;;;;;;;;;;;;;;;588:16;616:8;170:42;616:33;;667:2;:13;;;:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;660:22;;;542:147;:::o;5:134:-1:-;;89:6;83:13;74:22;;101:33;128:5;101:33;;;68:71;;;;;146:263;;261:2;249:9;240:7;236:23;232:32;229:2;;;277:1;274;267:12;229:2;312:1;329:64;385:7;376:6;365:9;361:22;329:64;;;319:74;;291:108;223:186;;;;;416:113;499:24;517:5;499:24;;;494:3;487:37;481:48;;;536:222;;663:2;652:9;648:18;640:26;;677:71;745:1;734:9;730:17;721:6;677:71;;;634:124;;;;;765:91;;827:24;845:5;827:24;;;816:35;;810:46;;;;863:121;;936:42;929:5;925:54;914:65;;908:76;;;;991:117;1060:24;1078:5;1060:24;;;1053:5;1050:35;1040:2;;1099:1;1096;1089:12;1040:2;1034:74;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.6.10;\npragma experimental ABIEncoderV2;\n\nimport \"./Roles.sol\";\n\ncontract ACL {\n\n    address constant deployedAddress = 0x22e7Dd9B7C2708dE833b880EF9804D3E31689Fa6;\n\n    modifier onlyEnterprise() {\n        Roles rl = Roles(deployedAddress);\n        uint flag = 0;\n        for (uint i = 0; i < rl.enterpriseCount(); i++) {\n            if ( msg.sender  ==  rl.veryEnterprise(i).enterpriseAddress) {\n            flag = 1;\n            }\n        }\n        require(flag == 1);\n        _;\n    }\n\n    function getFeeAddress() public view returns (address fAddress){\n         Roles rl = Roles(deployedAddress);\n         return rl.feeAddress();\n    }\n\n    modifier onlyAdmin() {\n        Roles rl = Roles(deployedAddress);\n        require(msg.sender == rl.adminAddress());\n        _;\n    }\n\n    modifier onlyStore() {\n        Roles rl = Roles(deployedAddress);\n        uint flag = 0;\n        for (uint i = 0; i < rl.storesCount(); i++) {\n            if ( msg.sender  == rl.veryStore(i).storeAddress) {\n            flag = 1;\n            }\n        }\n        require(flag == 1);\n        _;\n    }\n\n}\n",
-  "sourcePath": "/Users/lu/Desktop/contracts/JJToken/contracts/access/ACL.sol",
+  "sourcePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/access/ACL.sol",
   "ast": {
-    "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/access/ACL.sol",
+    "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/access/ACL.sol",
     "exportedSymbols": {
       "ACL": [
         1323
@@ -55,12 +55,12 @@
         "src": "57:33:6"
       },
       {
-        "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/access/Roles.sol",
+        "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/access/Roles.sol",
         "file": "./Roles.sol",
         "id": 1188,
         "nodeType": "ImportDirective",
         "scope": 1324,
-        "sourceUnit": 2567,
+        "sourceUnit": 2637,
         "src": "92:21:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -148,7 +148,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -156,10 +156,10 @@
                         "id": 1193,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "255:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -196,10 +196,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "266:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -214,7 +214,7 @@
                     "src": "266:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -361,7 +361,7 @@
                                   "referencedDeclaration": 1194,
                                   "src": "404:2:6",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Roles_$2566",
+                                    "typeIdentifier": "t_contract$_Roles_$2636",
                                     "typeString": "contract Roles"
                                   }
                                 },
@@ -372,7 +372,7 @@
                                 "lValueRequested": false,
                                 "memberName": "veryEnterprise",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2252,
+                                "referencedDeclaration": 2322,
                                 "src": "404:17:6",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_enterprise_$2122_memory_ptr_$",
@@ -519,7 +519,7 @@
                           "referencedDeclaration": 1194,
                           "src": "342:2:6",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Roles_$2566",
+                            "typeIdentifier": "t_contract$_Roles_$2636",
                             "typeString": "contract Roles"
                           }
                         },
@@ -530,7 +530,7 @@
                         "lValueRequested": false,
                         "memberName": "enterpriseCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2240,
+                        "referencedDeclaration": 2310,
                         "src": "342:18:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -792,7 +792,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -800,10 +800,10 @@
                         "id": 1244,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "616:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -840,10 +840,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "627:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -858,7 +858,7 @@
                     "src": "627:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -880,7 +880,7 @@
                         "referencedDeclaration": 1245,
                         "src": "667:2:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -1000,7 +1000,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -1008,10 +1008,10 @@
                         "id": 1257,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "726:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -1048,10 +1048,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "737:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -1066,7 +1066,7 @@
                     "src": "737:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -1133,7 +1133,7 @@
                               "referencedDeclaration": 1258,
                               "src": "791:2:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Roles_$2566",
+                                "typeIdentifier": "t_contract$_Roles_$2636",
                                 "typeString": "contract Roles"
                               }
                             },
@@ -1258,7 +1258,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -1266,10 +1266,10 @@
                         "id": 1276,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "864:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -1306,10 +1306,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "875:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -1324,7 +1324,7 @@
                     "src": "875:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -1471,7 +1471,7 @@
                                   "referencedDeclaration": 1277,
                                   "src": "1008:2:6",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Roles_$2566",
+                                    "typeIdentifier": "t_contract$_Roles_$2636",
                                     "typeString": "contract Roles"
                                   }
                                 },
@@ -1482,7 +1482,7 @@
                                 "lValueRequested": false,
                                 "memberName": "veryStore",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2231,
+                                "referencedDeclaration": 2301,
                                 "src": "1008:12:6",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_store_$2115_memory_ptr_$",
@@ -1629,7 +1629,7 @@
                           "referencedDeclaration": 1277,
                           "src": "951:2:6",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Roles_$2566",
+                            "typeIdentifier": "t_contract$_Roles_$2636",
                             "typeString": "contract Roles"
                           }
                         },
@@ -1640,7 +1640,7 @@
                         "lValueRequested": false,
                         "memberName": "storesCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2219,
+                        "referencedDeclaration": 2289,
                         "src": "951:14:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -1887,7 +1887,7 @@
     "src": "32:1102:6"
   },
   "legacyAST": {
-    "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/access/ACL.sol",
+    "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/access/ACL.sol",
     "exportedSymbols": {
       "ACL": [
         1323
@@ -1918,12 +1918,12 @@
         "src": "57:33:6"
       },
       {
-        "absolutePath": "/Users/lu/Desktop/contracts/JJToken/contracts/access/Roles.sol",
+        "absolutePath": "/Users/lu/Desktop/ningbojj/JJToken/contracts/access/Roles.sol",
         "file": "./Roles.sol",
         "id": 1188,
         "nodeType": "ImportDirective",
         "scope": 1324,
-        "sourceUnit": 2567,
+        "sourceUnit": 2637,
         "src": "92:21:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2011,7 +2011,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -2019,10 +2019,10 @@
                         "id": 1193,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "255:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -2059,10 +2059,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "266:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -2077,7 +2077,7 @@
                     "src": "266:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -2224,7 +2224,7 @@
                                   "referencedDeclaration": 1194,
                                   "src": "404:2:6",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Roles_$2566",
+                                    "typeIdentifier": "t_contract$_Roles_$2636",
                                     "typeString": "contract Roles"
                                   }
                                 },
@@ -2235,7 +2235,7 @@
                                 "lValueRequested": false,
                                 "memberName": "veryEnterprise",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2252,
+                                "referencedDeclaration": 2322,
                                 "src": "404:17:6",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_enterprise_$2122_memory_ptr_$",
@@ -2382,7 +2382,7 @@
                           "referencedDeclaration": 1194,
                           "src": "342:2:6",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Roles_$2566",
+                            "typeIdentifier": "t_contract$_Roles_$2636",
                             "typeString": "contract Roles"
                           }
                         },
@@ -2393,7 +2393,7 @@
                         "lValueRequested": false,
                         "memberName": "enterpriseCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2240,
+                        "referencedDeclaration": 2310,
                         "src": "342:18:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -2655,7 +2655,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -2663,10 +2663,10 @@
                         "id": 1244,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "616:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -2703,10 +2703,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "627:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -2721,7 +2721,7 @@
                     "src": "627:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -2743,7 +2743,7 @@
                         "referencedDeclaration": 1245,
                         "src": "667:2:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -2863,7 +2863,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -2871,10 +2871,10 @@
                         "id": 1257,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "726:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -2911,10 +2911,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "737:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -2929,7 +2929,7 @@
                     "src": "737:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -2996,7 +2996,7 @@
                               "referencedDeclaration": 1258,
                               "src": "791:2:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Roles_$2566",
+                                "typeIdentifier": "t_contract$_Roles_$2636",
                                 "typeString": "contract Roles"
                               }
                             },
@@ -3121,7 +3121,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Roles_$2566",
+                        "typeIdentifier": "t_contract$_Roles_$2636",
                         "typeString": "contract Roles"
                       },
                       "typeName": {
@@ -3129,10 +3129,10 @@
                         "id": 1276,
                         "name": "Roles",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2566,
+                        "referencedDeclaration": 2636,
                         "src": "864:5:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Roles_$2566",
+                          "typeIdentifier": "t_contract$_Roles_$2636",
                           "typeString": "contract Roles"
                         }
                       },
@@ -3169,10 +3169,10 @@
                       "name": "Roles",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2566,
+                      "referencedDeclaration": 2636,
                       "src": "875:5:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_Roles_$2566_$",
+                        "typeIdentifier": "t_type$_t_contract$_Roles_$2636_$",
                         "typeString": "type(contract Roles)"
                       }
                     },
@@ -3187,7 +3187,7 @@
                     "src": "875:22:6",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Roles_$2566",
+                      "typeIdentifier": "t_contract$_Roles_$2636",
                       "typeString": "contract Roles"
                     }
                   },
@@ -3334,7 +3334,7 @@
                                   "referencedDeclaration": 1277,
                                   "src": "1008:2:6",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Roles_$2566",
+                                    "typeIdentifier": "t_contract$_Roles_$2636",
                                     "typeString": "contract Roles"
                                   }
                                 },
@@ -3345,7 +3345,7 @@
                                 "lValueRequested": false,
                                 "memberName": "veryStore",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2231,
+                                "referencedDeclaration": 2301,
                                 "src": "1008:12:6",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_store_$2115_memory_ptr_$",
@@ -3492,7 +3492,7 @@
                           "referencedDeclaration": 1277,
                           "src": "951:2:6",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Roles_$2566",
+                            "typeIdentifier": "t_contract$_Roles_$2636",
                             "typeString": "contract Roles"
                           }
                         },
@@ -3503,7 +3503,7 @@
                         "lValueRequested": false,
                         "memberName": "storesCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2219,
+                        "referencedDeclaration": 2289,
                         "src": "951:14:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -3755,7 +3755,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-08-18T13:18:05.939Z",
+  "updatedAt": "2020-08-20T12:45:46.937Z",
   "devdoc": {
     "methods": {}
   },

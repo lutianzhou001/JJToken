@@ -20,21 +20,21 @@ contract JJToken is ERC20, ACL {
         return balanceOf(msg.sender);
     }
 
-    function mint(address enterprise, uint256 amount) public  {
+    function jjMint(address enterprise, uint256 amount) public  {
         _mint(enterprise, amount);
     }
 
 
-    function burn(address account, uint256 amount)  public  {
+    function jjBurn(address account, uint256 amount)  public  {
         _burn(account, amount);
     }
 
-    function approveTo(address tokenAddress, uint256 amount) onlyEnterprise public virtual returns (bool) {
+    function jjApproveTo(address tokenAddress, uint256 amount) onlyEnterprise public virtual returns (bool) {
         _approve(msg.sender, tokenAddress, amount);
         return true;
     }
 
-    function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
+    function jjTransfer(address recipient, uint256 amount) public virtual returns (bool) {
         _transfer(msg.sender, recipient, amount);
         return true;
     }

@@ -57,9 +57,9 @@ contract Coupons is ERC20, ACL {
         burn(msg.sender,amount);
         JJToken jToken = JJToken(tokenAddress);
         // 商家分成商家分成商家90%；
-        jToken.transfer(msg.sender, amount.mul(9).div(10));
+        jToken.jjTransfer(msg.sender, amount.mul(9).div(10));
         // 平台分成10%；
-        jToken.transfer(getFeeAddress(), amount.mul(1).div(10));
+        jToken.jjTransfer(getFeeAddress(), amount.mul(1).div(10));
     }
 
     function batchMint(address tokenAddress, address[] memory staff,uint256 amount) onlyAdmin public {
@@ -72,7 +72,7 @@ contract Coupons is ERC20, ACL {
 
     function issue(address tokenAddress, address enterpriseAddress,uint256 amount) onlyAdmin public{
         JJToken jToken = JJToken(tokenAddress);
-        jToken.mint(enterpriseAddress,amount);
+        jToken.jjMint(enterpriseAddress,amount);
     }
 
     function mint(address tokenAddress, address staff, uint256 amount) onlyEnterprise public  {
