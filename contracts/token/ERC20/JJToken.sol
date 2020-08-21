@@ -9,12 +9,14 @@ import "./ERC20.sol";
 import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 
+
 contract JJToken is ERC20, ACL {
 
     constructor (string memory name, string memory symbol)
         ERC20(name, symbol)
         public
     {}
+    
 
     function getBalance() public view returns(uint256) {
         return balanceOf(msg.sender);

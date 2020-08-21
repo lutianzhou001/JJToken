@@ -8,9 +8,12 @@ import "./JJToken.sol";
 import "./ERC20.sol";
 import "./IERC20.sol";
 import "../../math/SafeMath.sol";
+import "../../data/Orders.sol";
+import "../../data/OrderDetails.sol";
+
 
 contract Coupons is ERC20, ACL {
-
+    
     mapping (address => mapping (address => uint)) public tokens; // mapping of token addresses to mapping of account balances (token=0 means Ether)
 
     event OrderForUser(address tokenGet, uint amountGet, address tokenGive, uint amountGive, uint nonce, address maker, bytes32 indexed orderHash);
@@ -98,9 +101,16 @@ contract Coupons is ERC20, ACL {
         _burn(account, amount);
     }
 
-    function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
+    function transfer(address recipient, uint256 amount,string memory _orderId, string[] memory _orderDetailId, string memory _orderContent, string[] memory _orderDetailContent) public virtual returns (bool) {
         _transfer(msg.sender, recipient, amount);
         // then record it!
+        Orders o = Orders(OrdersAddress);
+        o.appendOrder(_orderId,_orderContent);
+        OrderDetails od = OrderDetails(OrderDetailsAddress);
+        require(_orderDetailId.length == _orderDetailContent.length, "orderDetailsId length must be same as orderDetailsContent length");
+        for (uint i = 0; i < _orderDetailId.length; i++) {
+            od.appendOrderDetail(_orderDetailId[i],  _orderDetailContent[i]);
+        }
         return true;
     }
 
