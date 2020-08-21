@@ -19,6 +19,10 @@ contract Coupons is ERC20, ACL {
     event Deposit(address token, address user, uint amount, uint balance);
     event Withdraw(address token, address user, uint amount, uint balance);
     event FundsMigrated(address user, address newContract);
+    
+    // storePercentage and platformPercentage
+    uint256 public storePercentage;
+    
 
     struct Coupon {
         string name;
@@ -51,15 +55,24 @@ contract Coupons is ERC20, ACL {
     function getBalance(address userAddress) public view returns(uint256) {
         return balanceOf(userAddress);
     }
+    
+    function setStorePercentage(uint256 _storePercentage) onlyAdmin public returns(bool) {
+        uint256 total = 100;
+        require( _storePercentage < total);
+        storePercentage = _storePercentage;
+        
+    }
+    
 
     function withdraw(address tokenAddress, uint256 amount) public payable returns(address) {
         require(getBalance(msg.sender) >= amount, "not larger than amount");
         burn(msg.sender,amount);
         JJToken jToken = JJToken(tokenAddress);
-        // 商家分成商家分成商家90%；
-        jToken.jjTransfer(msg.sender, amount.mul(9).div(10));
-        // 平台分成10%；
-        jToken.jjTransfer(getFeeAddress(), amount.mul(1).div(10));
+        jToken.jjTransfer(msg.sender, amount.mul(storePercentage).div(100));
+        // 默认只有平台和商家参与分成
+        uint256 total = 100;
+        uint256 platformPercentage = total.sub(storePercentage);
+        jToken.jjTransfer(getFeeAddress(), amount.mul(platformPercentage).div(100));
     }
 
     function batchMint(address tokenAddress, address[] memory staff,uint256 amount) onlyAdmin public {
@@ -87,6 +100,7 @@ contract Coupons is ERC20, ACL {
 
     function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
         _transfer(msg.sender, recipient, amount);
+        // then record it!
         return true;
     }
 
