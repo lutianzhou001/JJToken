@@ -1,3 +1,15 @@
+# Test it
+
+you can simply clone the project and run 
+
+```shell
+truffle test
+```
+
+to have it tested!
+
+
+
 # JJToken
 
 🚀Welcome to use JJToken and we really appreciate if u give us a star at this repository
