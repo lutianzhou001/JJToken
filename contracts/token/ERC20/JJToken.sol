@@ -12,6 +12,8 @@ import "../../math/SafeMath.sol";
 
 contract JJToken is ERC20, ACL {
 
+    
+
     constructor (string memory name, string memory symbol)
         ERC20(name, symbol)
         public

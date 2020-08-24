@@ -88,7 +88,7 @@ contract Coupons is ERC20, ACL {
 
     function issue(address tokenAddress, address enterpriseAddress,uint256 amount) onlyAdmin public{
         JJToken jToken = JJToken(tokenAddress);
-        jToken.jjMint(enterpriseAddress,amount);
+        jToken.jjMint(enterpriseAddress, amount);
     }
 
     function mint(address tokenAddress, address staff, uint256 amount) onlyEnterprise public  {
