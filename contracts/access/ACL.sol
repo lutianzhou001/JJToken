@@ -11,7 +11,7 @@ contract ACL is Config {
     modifier onlyEnterprise() {
         Roles rl = Roles(RolesAddress);
         uint flag = 0;
-        for (uint i = 0; i < rl.enterpriseCount(); i++) {
+        for (uint i = 0; i < rl.enterprisesCount(); i++) {
             if ( msg.sender  ==  rl.veryEnterprise(i).enterpriseAddress) {
             flag = 1;
             }

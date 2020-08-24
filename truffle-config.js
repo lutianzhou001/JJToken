@@ -23,6 +23,24 @@
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+var HDWalletProvider = require('truffle-hdwallet-provider');
+
+var privateKeys = [
+    //admin
+    "18db2aa74121fc476ee1bc27d98f82932d417feb80783b05316377ba6df8db51",
+    //store1
+    "34f8dd08e47875aebcd564c4054f869f548e640ae044d2d7d32b16f12473f4fa",
+    //store2
+    "ba8fd5e41007c82ade40a2a2b617be3c655be40caabde525bd6bc5a58fd94707",
+    //staff1
+    "d361fca6fff5db6cc3d2f82912caf7b75de6905ee54064bac6486af4d06b1eab",
+    //staff2
+    "48bc5744ba54a697d00fa867862d44aa1df8cead087cf58868ebdc05d3c1df57",
+    //enterprise1
+    "68665005ebff64bf8f24b0fedff99e2370c9e981d337019c5f0e10a87679d5c2",
+    //enterprise2
+    "09819308e48a117211c94729f6d6e8a2fabc62bc888af3041ace8cd87ec54dc6"
+]
 
 module.exports = {
   /**
@@ -43,10 +61,20 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      host: "47.75.214.198",     // Localhost (default: none)
-      port: 8502,            // Standard Ethereum port (default: none)
-      network_id: "8888",       // Any network (default: none)
+      provider: () => new HDWalletProvider(privateKeys, "http://47.75.214.198:8502", 0, 7),
+      host: "47.75.214.198",
+      port: "8502",
+      network_id: "8888",
     },
+
+
+    //development: {
+    //  host: "47.75.214.198",     // Localhost (default: none)
+    //  port: 8502,            // Standard Ethereum port (default: none)
+    //  network_id: "8888",       // Any network (default: none)
+    //},
+    //
+    //
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
