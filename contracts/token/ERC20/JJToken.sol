@@ -12,16 +12,14 @@ import "../../math/SafeMath.sol";
 
 contract JJToken is ERC20, ACL {
 
-    
-
-    constructor (string memory name, string memory symbol)
+    constructor(string memory name, string memory symbol)
         ERC20(name, symbol)
         public
     {}
     
 
-    function getBalance() public view returns(uint256) {
-        return balanceOf(msg.sender);
+    function jjBalance(address userAddress) public view returns(uint256) {
+        return balanceOf(userAddress);
     }
 
     function jjMint(address enterprise, uint256 amount) public  {
@@ -29,16 +27,16 @@ contract JJToken is ERC20, ACL {
     }
 
 
-    function jjBurn(address account, uint256 amount)  public  {
+    function jjBurn(address account, uint256 amount) public  {
         _burn(account, amount);
     }
 
-    function jjApproveTo(address tokenAddress, uint256 amount) onlyEnterprise public virtual returns (bool) {
+    function jjApproveTo(address tokenAddress, uint256 amount) onlyEnterprise public returns (bool) {
         _approve(msg.sender, tokenAddress, amount);
         return true;
     }
 
-    function jjTransfer(address recipient, uint256 amount) public virtual returns (bool) {
+    function jjTransfer(address recipient, uint256 amount) public returns (bool) {
         _transfer(msg.sender, recipient, amount);
         return true;
     }

@@ -58,19 +58,22 @@ contract Coupons is ERC20, ACL {
     function getBalance(address userAddress) public view returns(uint256) {
         return balanceOf(userAddress);
     }
+
+    function getJJTokenBalance(address userAddress) public view returns(uint256) {
+        JJToken jToken = JJToken(JJTokenAddress);
+        return jToken.balanceOf(userAddress);
+    }
     
     function setStorePercentage(uint256 _storePercentage) onlyAdmin public returns(bool) {
         uint256 total = 100;
         require( _storePercentage < total);
         storePercentage = _storePercentage;
-        
     }
     
-
-    function withdraw(address tokenAddress, uint256 amount) public payable returns(address) {
+    function withdraw(uint256 amount) public payable returns(address) {
         require(getBalance(msg.sender) >= amount, "not larger than amount");
         burn(msg.sender,amount);
-        JJToken jToken = JJToken(tokenAddress);
+        JJToken jToken = JJToken(JJTokenAddress);
         jToken.jjTransfer(msg.sender, amount.mul(storePercentage).div(100));
         // 默认只有平台和商家参与分成
         uint256 total = 100;
@@ -78,21 +81,21 @@ contract Coupons is ERC20, ACL {
         jToken.jjTransfer(getFeeAddress(), amount.mul(platformPercentage).div(100));
     }
 
-    function batchMint(address tokenAddress, address[] memory staff,uint256 amount) onlyAdmin public {
+    function batchMint(address[] memory staff,uint256 amount) onlyEnterprise public {
         for (uint i = 0; i < staff.length; i++) {
-            JJToken jToken = JJToken(tokenAddress);
+            JJToken jToken = JJToken(JJTokenAddress);
             jToken.transferFrom(msg.sender, address(this), amount);
             _mint(staff[i], amount);
         }
     }
 
-    function issue(address tokenAddress, address enterpriseAddress,uint256 amount) onlyAdmin public{
-        JJToken jToken = JJToken(tokenAddress);
+    function issue(address enterpriseAddress,uint256 amount) onlyAdmin public{
+        JJToken jToken = JJToken(JJTokenAddress);
         jToken.jjMint(enterpriseAddress, amount);
     }
 
-    function mint(address tokenAddress, address staff, uint256 amount) onlyEnterprise public  {
-        JJToken jToken = JJToken(tokenAddress);
+    function mint(address staff, uint256 amount) onlyEnterprise public  {
+        JJToken jToken = JJToken(JJTokenAddress);
         jToken.transferFrom(msg.sender, address(this), amount);
         _mint(staff, amount);
     }
@@ -101,7 +104,7 @@ contract Coupons is ERC20, ACL {
         _burn(account, amount);
     }
 
-    function transfer(address recipient, uint256 amount,string memory _orderId, string[] memory _orderDetailId, string memory _orderContent, string[] memory _orderDetailContent) public virtual returns (bool) {
+    function couponTransfer(address recipient, uint256 amount,string memory _orderId, string[] memory _orderDetailId, string memory _orderContent, string[] memory _orderDetailContent) public virtual returns (bool) {
         _transfer(msg.sender, recipient, amount);
         // then record it!
         Orders o = Orders(OrdersAddress);
@@ -114,8 +117,15 @@ contract Coupons is ERC20, ACL {
         return true;
     }
 
-    function refund(address recipient, uint256 amount) onlyStore public virtual returns (bool) {
+    function couponRefund(address recipient, uint256 amount,string memory _orderId, string[] memory _orderDetailId, string memory _orderContent, string[] memory _orderDetailContent) onlyStore public virtual returns (bool) {
         _transfer(msg.sender, recipient, amount);
+        Orders o = Orders(OrdersAddress);
+        o.appendOrder(_orderId,_orderContent);
+        OrderDetails od = OrderDetails(OrderDetailsAddress);
+        require(_orderDetailId.length == _orderDetailContent.length, "orderDetailsId length must be same as orderDetailsContent length");
+        for (uint i = 0; i < _orderDetailId.length; i++) {
+            od.appendOrderDetail(_orderDetailId[i],  _orderDetailContent[i]);
+        }
         return true;
     }
 }

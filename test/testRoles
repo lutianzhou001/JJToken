@@ -1,0 +1,12 @@
+const CONTRACT_ADDRESS = "0xa8659791eF77BE09e373b27a659257fb9D2E5C66";
+myContract = artifacts.require("Roles");
+
+contract("MyContractTest", function (accounts) {
+
+    it("test", async function () {
+        let myc = await myContract.at(CONTRACT_ADDRESS)
+        let res = await myc.enterprises()
+        console.log(res)
+        // Here, you can feel free to use myContract
+    });
+});
