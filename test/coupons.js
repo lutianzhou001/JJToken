@@ -1,6 +1,6 @@
 const Coupons = artifacts.require("Coupons");
 const JJToken = artifacts.require("JJToken");
-const CONTRACT_ADDRESS_JJTOKEN = "0xbCff0801bffC7E687D99Cc224002cbE4CAbc523C";
+const CONTRACT_ADDRESS_JJTOKEN = "0xC06e0C9cA7f2e3511fcc5A2185Cbc3199F1C56BC";
 
 var web3 = require("web3");
 
@@ -32,11 +32,12 @@ contract("Coupons test", async accounts => {
 
     let staff = ["0xbA7384cC7BbA2b6915Af467c70a6a918Fd301000", "0x9E46CeCA15e4ecBfc33f4A8c6656DDCb29a0eC08"]
 
-    let amount = web3.utils.toBN(100000);
-    let mintAmount = web3.utils.toBN(10000);
-    let batchMintAmount = web3.utils.toBN(20000);
+    let amount = web3.utils.toBN(1000000);
+    let mintAmount = web3.utils.toBN(100000);
+    let batchMintAmount = web3.utils.toBN(200000);
 
-    let transferAmount = web3.utils.toBN(10000);
+    let transferAmount = web3.utils.toBN(30000);
+    let refundAmount = web3.utils.toBN(20000);
     let withdrawAmount = web3.utils.toBN(9000);
     let orderId = 'orderId001'
     let orderDetailId = ['orderDetailId001', 'orderDetailId002']
@@ -104,27 +105,27 @@ contract("Coupons test", async accounts => {
     it("should transfer from one account to another", async () => {
         let instance = await Coupons.deployed();
         // 原来staff[0]的余额和原来商家的余额；
-        let staffBefore = await instance.getBalance(staff[0]);
-        let storeBefore = await instance.getBalance(stores[0].storeAddress);
-        await instance.couponTransfer(stores[0].storeAddress, transferAmount, orderId, orderDetailId, orderContent, orderDetailContent, { from: staff[0] });
+        let staffBefore = await instance.getBalance(staff[1]);
+        let storeBefore = await instance.getBalance(stores[1].storeAddress);
+        await instance.couponTransfer(stores[0].storeAddress, transferAmount, orderId, orderDetailId, orderContent, orderDetailContent, { from: staff[1] });
         // 转账好了开始验证
-        let staffAfter = await instance.getBalance(staff[0]);
+        let staffAfter = await instance.getBalance(staff[1]);
         let storeAfter = await instance.getBalance(stores[0].storeAddress);
-        assert.equal(Number(staffBefore) - transferAmount, Number(staffAfter));
-        assert.equal(Number(storeBefore) + transferAmount, Number(storeAfter));
+        assert.equal(Number(staffBefore) - Number(transferAmount), Number(staffAfter));
+        assert.equal(Number(storeBefore) + Number(transferAmount), Number(storeAfter));
     })
 
     it("should refund to user", async () => {
         let instance = await Coupons.deployed();
         // 原来staff[0]的余额和原来商家的余额；
-        let staffBefore = await instance.getBalance(staff[0]);
+        let staffBefore = await instance.getBalance(staff[1]);
         let storeBefore = await instance.getBalance(stores[0].storeAddress);
-        await instance.couponRefund(staff[0], transferAmount, orderId, orderDetailId, orderContent, orderDetailContent, { from: stores[0].storeAddress });
+        await instance.couponRefund(staff[1], refundAmount, orderId, orderDetailId, orderContent, orderDetailContent, { from: stores[0].storeAddress });
         // 转账好了开始验证
-        let staffAfter = await instance.getBalance(staff[0]);
+        let staffAfter = await instance.getBalance(staff[1]);
         let storeAfter = await instance.getBalance(stores[0].storeAddress);
-        assert.equal(Number(staffBefore) + transferAmount, Number(staffAfter));
-        assert.equal(Number(storeBefore) - transferAmount, Number(storeAfter));
+        assert.equal(Number(staffBefore) + Number(refundAmount), Number(staffAfter));
+        assert.equal(Number(storeBefore) - Number(refundAmount), Number(storeAfter));
     })
 
     it("should withdraw tokens", async () => {
@@ -154,10 +155,10 @@ contract("Coupons test", async accounts => {
         let res1 = await instance.getBalance(staff[0]);
         let res2 = await instance.getBalance(staff[1]);
         // 销毁账户的所有Token
-        await instance.burn(staff[0], res1, { from: accountAdmin });
-        await instance.burn(staff[1], res2, { from: accountAdmin });
-        let resAfter1 = instance.getBalance(staff[0]);
-        let resAfter2 = instance.getBalance(staff[1]);
+        await instance.burn(staff[0], res1, { from: stores[0].storeAddress });
+        await instance.burn(staff[1], res2, { from: stores[0].storeAddress });
+        let resAfter1 = await instance.getBalance(staff[0]);
+        let resAfter2 = await instance.getBalance(staff[1]);
         assert.equal(Number(resAfter1), Number(0));
         assert.equal(Number(resAfter2), Number(0));
         // TODO: 平台账户还未销毁

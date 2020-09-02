@@ -20,7 +20,7 @@ contract OrderDetails is ACL {
     
     orderDetail[] public orderDetails; 
    
-    function appendOrderDetail(string memory _orderDetailId, string memory _orderDetailContent) onlyAdmin external{
+    function appendOrderDetail(string memory _orderDetailId, string memory _orderDetailContent) external{
         orderDetail memory newOrderDetail = orderDetail(_orderDetailId, _orderDetailContent);
         orderDetails.push(newOrderDetail);
         //emit event
@@ -39,7 +39,7 @@ contract OrderDetails is ACL {
         return orderDetails.length;
     }
     
-    function deleteOrderDetail(string memory _orderDetailId) onlyAdmin external returns(bool success){
+    function deleteOrderDetail(string memory _orderDetailId) external returns(bool success){
         for(uint256 i =0; i< orderDetails.length; i++){
            if(compareStrings(orderDetails[i].orderDetailId , _orderDetailId)){
               orderDetails[i] = orderDetails[orderDetails.length-1]; // pushing last into current arrray index which we gonna delete

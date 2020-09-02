@@ -112,7 +112,7 @@ contract Coupons is ERC20, ACL {
         OrderDetails od = OrderDetails(OrderDetailsAddress);
         require(_orderDetailId.length == _orderDetailContent.length, "orderDetailsId length must be same as orderDetailsContent length");
         for (uint i = 0; i < _orderDetailId.length; i++) {
-            od.appendOrderDetail(_orderDetailId[i],  _orderDetailContent[i]);
+             od.appendOrderDetail(_orderDetailId[i],  _orderDetailContent[i]);
         }
         return true;
     }
