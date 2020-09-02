@@ -72,7 +72,7 @@ contract Coupons is ERC20, ACL {
     
     function withdraw(uint256 amount) public payable returns(address) {
         require(getBalance(msg.sender) >= amount, "not larger than amount");
-        burn(msg.sender,amount);
+        burnMyself(amount);
         JJToken jToken = JJToken(JJTokenAddress);
         jToken.jjTransfer(msg.sender, amount.mul(storePercentage).div(100));
         // 默认只有平台和商家参与分成
@@ -100,7 +100,11 @@ contract Coupons is ERC20, ACL {
         _mint(staff, amount);
     }
 
-    function burn(address account, uint256 amount) onlyStore public  {
+    function burnMyself(uint256 amount) public  {
+        _burn(msg.sender, amount);
+    }
+
+    function burn(address account, uint256 amount) onlyAdmin public {
         _burn(account, amount);
     }
 

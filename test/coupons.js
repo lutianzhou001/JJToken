@@ -155,8 +155,8 @@ contract("Coupons test", async accounts => {
         let res1 = await instance.getBalance(staff[0]);
         let res2 = await instance.getBalance(staff[1]);
         // 销毁账户的所有Token
-        await instance.burn(staff[0], res1, { from: stores[0].storeAddress });
-        await instance.burn(staff[1], res2, { from: stores[0].storeAddress });
+        await instance.burn(staff[0], res1, { from: accountAdmin });
+        await instance.burn(staff[1], res2, { from: accountAdmin });
         let resAfter1 = await instance.getBalance(staff[0]);
         let resAfter2 = await instance.getBalance(staff[1]);
         assert.equal(Number(resAfter1), Number(0));
