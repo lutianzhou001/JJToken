@@ -4,10 +4,10 @@ pragma experimental ABIEncoderV2;
 
 
 contract Config {
-    
-        address constant RolesAddress = 0x28A050Feac379fA5f5c8C4AAEe840c0F9C2123CB;
-        address constant OrdersAddress = 0xdbF5f2b53142ECc6dc0aC9F7BF856d6d134B6D8d;
-        address constant OrderDetailsAddress = 0xda37F93C7454bb1d3e6257A1a0eD67108Bcd194F;
-        address constant JJTokenAddress = 0xC06e0C9cA7f2e3511fcc5A2185Cbc3199F1C56BC; 
+        address constant RolesAddress = 0x44CB07D1E415739daFD663B2Ceb31dEF9a130799;
+        address constant JJTokenAddress = 0xab3c25BfE595774080D4F46d420df232c07c333B;
+        address constant Coupons = 0xc698cd17ca036E06aBBb646044e1255633D84556;
+        address constant OrdersAddress = 0x975a9D6D00c6495459cB2fB06aA298EF5c00D39a;
+        address constant OrderDetailsAddress = 0xe390a9719A907EEA07506B3F50a7cA2399844970;
 }
 

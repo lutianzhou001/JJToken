@@ -26,22 +26,22 @@
 var HDWalletProvider = require('truffle-hdwallet-provider');
 
 var privateKeys = [
-  //admin
-  "18db2aa74121fc476ee1bc27d98f82932d417feb80783b05316377ba6df8db51",
-  //store1
-  "34f8dd08e47875aebcd564c4054f869f548e640ae044d2d7d32b16f12473f4fa",
-  //store2
-  "ba8fd5e41007c82ade40a2a2b617be3c655be40caabde525bd6bc5a58fd94707",
-  //staff1
-  "d361fca6fff5db6cc3d2f82912caf7b75de6905ee54064bac6486af4d06b1eab",
-  //staff2
-  "48bc5744ba54a697d00fa867862d44aa1df8cead087cf58868ebdc05d3c1df57",
+  // admin
+  "0x20ab39aa6f08575f06141cdb8211a3fba4b51954c4f8d7e54a2b53b04aaec54c",
+  // store1
+  "0x4ada9b8f5f9056627960f3486d88ae280ce94d65ab8cde213c53eb101e7a9580",
+  // store2
+  "0x19f4fc29e44d509877dce10a61c43e5ef4332b77ea6173c2a420b83b0d2bd209",
   //enterprise1
-  "68665005ebff64bf8f24b0fedff99e2370c9e981d337019c5f0e10a87679d5c2",
+  "0x02c8bcb6c3d5779ec6f0217b519009dba2ed68e7568301c7cca75639c31a64a2",
   //enterprise2
-  "09819308e48a117211c94729f6d6e8a2fabc62bc888af3041ace8cd87ec54dc6",
-  //staff0
-  "21a54e24a2c333ea8d3570aebe161391404b843488981ee0b6ccbafa7e760c8a"
+  "0x1e5bc3ee97bc07722bcddbd265389682fa41e1bab611c98c2f234472b5240992",
+  // staff1
+  "0x23ac32a2f7419bd8d90afcc53d0f940daffd9bff66fe1a927ca29e0f243e14cb",
+  // staff2
+  "0xe9b50bb86684dfcdd6b887e6ebcfba049692d9f8b3699b5066cbdf40fe4d3c24",
+  // feeaddress
+  "0x8627c69a23f4eb1f69a2b1801daa43af77f71c3d6cca339ff889af43cdc125b9",
 ]
 
 module.exports = {

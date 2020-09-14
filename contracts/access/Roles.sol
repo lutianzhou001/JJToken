@@ -58,7 +58,7 @@ contract Roles {
     
     
     function getStoreById(string memory _storeId) public view returns (address sAddress) {
-         for(uint256 i =0; i< this.storesCount(); i++){
+         for(uint256 i =0; i< storesLength; i++){
            if(compareStrings(stores[i].storeId , _storeId)){
               return stores[i].storeAddress;
            }
@@ -66,7 +66,7 @@ contract Roles {
     }
     
     function getEnterpriseById(string memory  _enterpriseId) public view returns (address eAddress) {
-        for(uint256 i =0; i< this.enterprisesCount(); i++){
+        for(uint256 i =0; i< enterprisesLength; i++){
            if(compareStrings(enterprises[i].enterpriseId , _enterpriseId)){
               return enterprises[i].enterpriseAddress;
            }
@@ -92,7 +92,7 @@ contract Roles {
     
     function updateEnterprise(string memory _enterpriseId, string memory _newEnterpriseName ,address  _newEnterpriseAddress ) onlyAdmin external returns (bool success){
        //This has a problem we need loop
-       for(uint256 i =0; i< this.enterprisesCount(); i++){
+       for(uint256 i =0; i< enterprisesLength; i++){
            if(compareStrings(enterprises[i].enterpriseId , _enterpriseId)){
               enterprises[i].enterpriseAddress = _newEnterpriseAddress;
               enterprises[i].enterpriseName = _newEnterpriseName;
@@ -105,7 +105,7 @@ contract Roles {
     
     function updateStore(string memory _storeId, string memory _newStoreName ,address  _newStoreAddress ) onlyAdmin external returns (bool success){
        //This has a problem we need loop
-       for(uint256 i =0; i< this.storesCount(); i++){
+       for(uint256 i =0; i< storesLength; i++){
            if(compareStrings(stores[i].storeId , _storeId)){
               stores[i].storeAddress = _newStoreAddress;
               stores[i].storeName = _newStoreName;
@@ -118,10 +118,10 @@ contract Roles {
     
     
     function deleteEnterprise(string memory _enterpriseId) onlyAdmin external returns(bool success){
-        for(uint256 i =0; i< this.enterprisesCount(); i++){
+        for(uint256 i =0; i< enterprisesLength; i++){
            if(compareStrings(enterprises[i].enterpriseId , _enterpriseId)){
-              enterprises[i] = enterprises[this.enterprisesCount() - 1]; // pushing last into current arrray index which we gonna delete
-              delete enterprises[this.enterprisesCount() - 1]; // now deleteing last index
+              enterprises[i] = enterprises[enterprisesLength - 1]; // pushing last into current arrray index which we gonna delete
+              delete enterprises[enterprisesLength - 1]; // now deleteing last index
               enterprisesLength = enterprisesLength - 1;
               emit EnterpriseDelete(_enterpriseId);
               return true;
@@ -132,10 +132,10 @@ contract Roles {
    
     
     function deleteStore(string memory _storeId) onlyAdmin external returns(bool success){
-        for(uint256 i =0; i< this.storesCount(); i++){
+        for(uint256 i =0; i< storesLength; i++){
            if(compareStrings(stores[i].storeId , _storeId)){
-              stores[i] = stores[this.storesCount() - 1]; // pushing last into current arrray index which we gonna delete
-              delete stores[this.storesCount() - 1]; // now deleteing last index
+              stores[i] = stores[storesLength - 1]; // pushing last into current arrray index which we gonna delete
+              delete stores[storesLength - 1]; // now deleteing last index
               storesLength = storesLength - 1;
               emit StoreDelete(_storeId);
               return true;

@@ -7,30 +7,30 @@ var web3 = require("web3");
 contract("Coupons test", async accounts => {
     //预置条件
     let storePercentage = 90;
-    let accountAdmin = '0x13cd7377D9749B22764EfdC3fC98A4a3DD0F3C77'
-    let platformAddress = '0x7b76Ff81b118c6B4C0E4b99250d3Bc5FE4AD899c'
+    let accountAdmin = '0x04E6149570e0d1C9A9377970baA28E45299dc5aA'
+    let platformAddress = '0x0Be20453fC613905bB0fb0c13896a57E7De774Ee'
     let stores = [{
         storeName: "JD",
         storeId: "s001",
-        storeAddress: "0x8257700fA1015B35C947444D7EA78143248e7A97"
+        storeAddress: "0xfE7B6F0704BcAfc6607a829E1BE36e7FfFfd9465"
     }, {
         storeName: "TB",
         storeId: "t001",
-        storeAddress: "0x4e1ad8C78604219E59679e6a52Bc6b68131DFB7e"
+        storeAddress: "0xd8a93bD246Ba06F8aC70933CF5C7cc8F1EC5fb67"
 
     }];
 
     let enterprises = [{
         enterpriseName: "Yuanlu",
         enterpriseId: "y001",
-        enterpriseAddress: "0xD433b45D13a1c00947a4fbef7155BbeF48862D86",
+        enterpriseAddress: "0xCD63e143AC961078B75F51d42644EC4D150C919c",
     }, {
         enterpriseName: "Ningbo",
         enterpriseId: "n001",
-        enterpriseAddress: "0x94BEFeFF67b36281331B6D4bBf5F57C8D8cA8226",
+        enterpriseAddress: "0x17e680F9FAe27a26C06b41348668460BF26360bC",
     }]
 
-    let staff = ["0xbA7384cC7BbA2b6915Af467c70a6a918Fd301000", "0x9E46CeCA15e4ecBfc33f4A8c6656DDCb29a0eC08"]
+    let staff = ["0xbEccAa9Ab2c2273980A4216eEfAADF6cd85b1747", "0x5eaB2A4E6f1961BCbF36E371B9e10Eae527AAd4c"]
 
     let amount = web3.utils.toBN(1000000);
     let mintAmount = web3.utils.toBN(100000);

@@ -3,33 +3,36 @@ var web3 = require('web3');
 
 contract('JJToken test', async accounts => {
     //预置条件
-    let accountAdmin = '0x13cd7377D9749B22764EfdC3fC98A4a3DD0F3C77';
     let amount = web3.utils.toBN(1000);
     let burnAmount = web3.utils.toBN(200);
     let transferAmount = web3.utils.toBN(100);
+
+    let accountAdmin = '0x04E6149570e0d1C9A9377970baA28E45299dc5aA'
+    let platformAddress = '0x0Be20453fC613905bB0fb0c13896a57E7De774Ee'
     let stores = [{
-        storeName: 'JD',
-        storeId: 's001',
-        storeAddress: '0x8257700fA1015B35C947444D7EA78143248e7A97',
-    },
-    {
-        storeName: 'TB',
-        storeId: 't001',
-        storeAddress: '0x4e1ad8C78604219E59679e6a52Bc6b68131DFB7e',
-    },
-    ];
+        storeName: "JD",
+        storeId: "s001",
+        storeAddress: "0xfE7B6F0704BcAfc6607a829E1BE36e7FfFfd9465"
+    }, {
+        storeName: "TB",
+        storeId: "t001",
+        storeAddress: "0xd8a93bD246Ba06F8aC70933CF5C7cc8F1EC5fb67"
+
+    }];
 
     let enterprises = [{
-        enterpriseName: 'Yuanlu',
-        enterpriseId: 'y001',
-        enterpriseAddress: '0xD433b45D13a1c00947a4fbef7155BbeF48862D86',
-    },
-    {
-        enterpriseName: 'Ningbo',
-        enterpriseId: 'n001',
-        enterpriseAddress: '0x94BEFeFF67b36281331B6D4bBf5F57C8D8cA8226',
-    },
-    ];
+        enterpriseName: "Yuanlu",
+        enterpriseId: "y001",
+        enterpriseAddress: "0xCD63e143AC961078B75F51d42644EC4D150C919c",
+    }, {
+        enterpriseName: "Ningbo",
+        enterpriseId: "n001",
+        enterpriseAddress: "0x17e680F9FAe27a26C06b41348668460BF26360bC",
+    }]
+
+    let staff = ["0xbEccAa9Ab2c2273980A4216eEfAADF6cd85b1747", "0x5eaB2A4E6f1961BCbF36E371B9e10Eae527AAd4c"]
+
+
 
     it('should mint for enterprises', async () => {
         let instance = await JJToken.deployed();
@@ -54,6 +57,16 @@ contract('JJToken test', async accounts => {
         });
         assert.equal(Number(balance), Number(amount) - Number(burnAmount));
     });
+
+    it('should approve some token to token address', async ()=> {
+        let instance = await JJToken.deployed();
+        let balance = await instance.jjBalance(enterprises[0].enterpriseAddress, {
+            from: enterprises[0].enterpriseAddress,
+        });
+        // approve all then tokens to this address
+        let result  = await instance.jjAppproveTo("0xc698cd17ca036E06aBBb646044e1255633D84556", balance)
+        assert.equal(0,0);
+    })
 
     it('should transfer token to other users', async () => {
         let instance = await JJToken.deployed();
